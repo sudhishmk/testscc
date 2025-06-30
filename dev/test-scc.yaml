@@ -6,7 +6,7 @@ spec:
   hostPID: true
   containers:
     - name: sleeper
-      image: busybox
+      image: registry.connect.redhat.com/sumologic/busybox@sha256:209bc8e0b1d958fc699f3bb75b1248544e372ad35cdc46c991bd1698f641e1f9
       command: ["/bin/sh", "-c", "while true; do sleep 60; done"]
       securityContext:
         runAsUser: 0
